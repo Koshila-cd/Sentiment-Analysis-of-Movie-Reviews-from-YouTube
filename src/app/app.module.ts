@@ -14,9 +14,9 @@ import {SearchBarComponent} from './search-bar/search-bar.component';
 import {MovieTilesComponent} from './movie-tiles/movie-tiles.component';
 import {SelectMovieComponent} from './select-movie/select-movie.component';
 
-const appRoutes: Routes = [
-  { path: 'app-select-movie', component: SelectMovieComponent }
-];
+// const appRoutes: Routes = [
+//   { path: 'app-select-movie', component: SelectMovieComponent }
+// ];
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,10 +33,10 @@ const appRoutes: Routes = [
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true }
-    )
+    // RouterModule.forRoot(
+    //   appRoutes,
+    //   { enableTracing: true }
+    // )
   ],
   providers: [],
   bootstrap: [AppComponent],

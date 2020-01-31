@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import {SelectMovieComponent} from './select-movie/select-movie.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'app-select-movie', component: SelectMovieComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -11,8 +13,8 @@ const routes: Routes = [];
 })
 export class AppRoutingModule { 
 
-  routes: Routes = [
-    { path: 'app-select-movie', component: SelectMovieComponent }
-  ];
+  // routes: Routes = [
+  //   { path: 'app-select-movie', component: SelectMovieComponent }
+  // ];
 
 }
