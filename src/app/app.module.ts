@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,14 +12,19 @@ import {AngularMaterialModule} from './angular-material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SearchBarComponent} from './search-bar/search-bar.component';
 import {MovieTilesComponent} from './movie-tiles/movie-tiles.component';
+import {SelectMovieComponent} from './select-movie/select-movie.component';
 
+const appRoutes: Routes = [
+  { path: 'app-select-movie', component: SelectMovieComponent }
+];
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MainPageComponent,
     SearchBarComponent,
-    MovieTilesComponent
+    MovieTilesComponent,
+    SelectMovieComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +32,11 @@ import {MovieTilesComponent} from './movie-tiles/movie-tiles.component';
     BrowserAnimationsModule,
     AngularMaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent],
