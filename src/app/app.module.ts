@@ -14,6 +14,10 @@ import {SearchBarComponent} from './search-bar/search-bar.component';
 import {MovieTilesComponent} from './movie-tiles/movie-tiles.component';
 import {SelectMovieComponent} from './select-movie/select-movie.component';
 
+import {Service} from '../epics/service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+// import { HttpClient, HttpHeaders, HttpHandler } from '@angular/common/http';
+
 // const appRoutes: Routes = [
 //   { path: 'app-select-movie', component: SelectMovieComponent }
 // ];
@@ -33,13 +37,20 @@ import {SelectMovieComponent} from './select-movie/select-movie.component';
     AngularMaterialModule,
     ReactiveFormsModule,
     FormsModule,
+    HttpClientModule
+    // Service
     // RouterModule.forRoot(
     //   appRoutes,
     //   { enableTracing: true }
     // )
   ],
-  providers: [],
+  providers: [Service, HttpClient],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {
+
+  // constructor(service: Service) {
+  //   service.findAll()
+  // }
+ }
