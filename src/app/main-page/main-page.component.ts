@@ -11,19 +11,12 @@ import { AddMovie } from 'src/models/addMovie';
 })
 export class MainPageComponent implements OnInit {
 
-  tiles = [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-  ];
   constructor(private service: Service) { 
     this.addMovie = new Movie();
   }
 
   ngOnInit() {
+    // window.location.reload();
     this.service.findAll().subscribe(data => {
       this.movies = data;
       this.movies.forEach(dat =>{
@@ -32,27 +25,17 @@ export class MainPageComponent implements OnInit {
     });
   }
 
-  // addTrailer($event){    
-  //   console.log("Save button is clicked!", $event);    
-  // } 
-
 
   movies: Movie[]
   addMovie: Movie
-  // addMovie: AddMovie[]
 
-  // '', '', 'Magneta', 'Tornado'];
   addTrailer(title: string, url: string) {
     if (title && url) {
 
-      console.log(title)
-      console.log(url)
       this.addMovie.movieName = title
       this.addMovie.trailerUrl = url
 
       this.service.addMovie(this.addMovie).subscribe(data => {
-        // this.movies = data;
-        console.log(data)
         window.location.reload();
       });
 
@@ -60,7 +43,5 @@ export class MainPageComponent implements OnInit {
 
     }
   }
-
-
 
 }

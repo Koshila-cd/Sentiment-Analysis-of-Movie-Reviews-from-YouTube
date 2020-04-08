@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Movie } from '../models/movie';
 import { Observable, of } from 'rxjs';
-import { AddMovie } from 'src/models/addMovie';
  
 @Injectable()
 export class Service {

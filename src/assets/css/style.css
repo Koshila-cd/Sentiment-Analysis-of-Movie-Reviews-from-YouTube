@@ -110,7 +110,7 @@ header .navbar {
 }
 
 header .navbar-default {
-	background-color: transparent;
+	background-color: #09284b;
 	border: none;
 	margin-bottom: 0px;
 	position: relative;
@@ -121,7 +121,7 @@ header .navbar-default {
 header .navbar-default .navbar-header {
 	z-index: 1030;
 	position: relative;
-	background: #fff;
+	/* background: #fff; */
 }
 
 /*== Logo ==*/
@@ -157,29 +157,29 @@ header .navbar-default .navbar-header {
 	background-repeat: no-repeat;
 	background-position: left;
 	padding-left: 30px;
-	color: #474747;
+	color: #ffffff !important;
 	font-weight: 400;
 }
 
 .web-sh.navbar-form input::-webkit-input-placeholder {
 	/* Chrome */
-	color: #474747;
+	color: #ffffff !important;
 }
 
 .web-sh.navbar-form input:-ms-input-placeholder {
 	/* IE 10+ */
-	color: #474747;
+	color: #ffffff !important;
 }
 
 .web-sh.navbar-form input::-moz-placeholder {
 	/* Firefox 19+ */
-	color: #474747;
+	color: #ffffff !important;
 	opacity: 1;
 }
 
 .web-sh.navbar-form input:-moz-placeholder {
 	/* Firefox 4 - 18 */
-	color: #474747;
+	color: #ffffff !important;
 	opacity: 1;
 }
 
@@ -316,7 +316,7 @@ header .navbar-default .navbar-header {
 .login-signup ul li a {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	color: #636363;
+	color: #ffffff !important;
 	text-decoration: none;
 	font-size: 14px;
 	display: block;
@@ -417,7 +417,7 @@ header .navbar-default .navbar-header {
 .nav-box ul li a {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	color: #636363;
+	color: #ffffff !important;
 	text-decoration: none;
 	font-size: 14px;
 	padding: 0px 10px;
