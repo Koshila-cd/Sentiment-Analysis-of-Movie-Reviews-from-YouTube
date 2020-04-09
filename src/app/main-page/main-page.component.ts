@@ -25,7 +25,6 @@ export class MainPageComponent implements OnInit {
     });
   }
 
-
   movies: Movie[]
   addMovie: Movie
 

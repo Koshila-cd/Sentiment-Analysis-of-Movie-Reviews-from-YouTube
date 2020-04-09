@@ -626,6 +626,9 @@ header .navbar-default .navbar-header {
 	background: #007dea;
 }
 
+.col-lg-3 {
+	width: 20%;
+}
 .food {
 	position: absolute;
 	right: 0px;
