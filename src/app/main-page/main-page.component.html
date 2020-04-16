@@ -34,7 +34,7 @@
                         <span class="icon-bar"></span> 
                         <span class="icon-bar"></span> 
                         </button>
-                        <a href="index.html" class="navbar-brand"><img src="../../assets/images/logo.jpeg" alt="" /></a>
+                        <a href="index.html" class="navbar-brand"><img src="../../assets/images/logo.jpeg" alt="SpyRated logo" /></a>
                      </div>
                      <form class="navbar-form navbar-left web-sh">
                         <div class="form">
@@ -108,7 +108,9 @@
                   <div class="product-sh">
                      <div class="col-sm-3">
                         <div class="form-sh">
-                           <input type="text" placeholder="Trailer Title"  #title >
+                           <input type="text" id="name" required placeholder="Trailer Title"  #title >
+                           <!-- <div *ngIf="name.invalid && (name.dirty || name.touched)"
+    class="alert alert-danger"> </div>> -->
                         </div>
                      </div>
                      <div class="col-sm-6">
@@ -128,7 +130,7 @@
                   <a routerLink="/app-select-movie">
                      <div class="box-img">
                         <h4>{{movie.movieName}}</h4>
-                        <img src={{movie.thumbnail}} alt="" />
+                        <img src={{movie.thumbnail}} alt="moive trailer image" />
                         <h4>rate: {{movie.rate}}</h4>
                         <img src="../../assets/images/movie-ticket.png" width="30px" height="30px" alt="golden ticket" />
                      </div>
