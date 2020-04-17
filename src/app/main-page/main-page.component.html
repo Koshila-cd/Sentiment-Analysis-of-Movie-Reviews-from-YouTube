@@ -38,7 +38,7 @@
                      </div>
                      <form class="navbar-form navbar-left web-sh">
                         <div class="form">
-                           <input type="text" class="form-control" placeholder="Search for Movies">
+                           <input type="text" class="form-control" placeholder="Search for Movies" disabled>
                         </div>
                      </form>
                   </div>
@@ -47,8 +47,8 @@
                         <div class="login-sr">
                            <div class="login-signup">
                               <ul>
-                                 <li><a href="#">Login</a></li>
-                                 <li><a class="custom-b" href="#">Sign up</a></li>
+                                 <li><a href="#" aria-disabled="true">Login</a></li>
+                                 <li><a class="custom-b" href="#" aria-disabled="true">Sign up</a></li>
                               </ul>
                            </div>
                         </div>
@@ -63,7 +63,7 @@
                         <div class="nav-b hidden-xs">
                            <div class="nav-box">
                               <ul>
-                                 <li><a href="howitworks.html">How it works</a></li>
+                                 <li><a href="howitworks.html" aria-disabled="true">How it works</a></li>
                                  <!-- <li><a href="about-us.html">Contact</a></li> -->
                               </ul>
                            </div>
@@ -127,14 +127,14 @@
             </div>
             <div class="row clearfix">
                <div class="col-lg-3 col-sm-6 col-md-3" *ngFor="let movie of movies">
-                  <a routerLink="/app-select-movie">
                      <div class="box-img">
-                        <h4>{{movie.movieName}}</h4>
-                        <img src={{movie.thumbnail}} alt="moive trailer image" />
+                        <div style="height: 100px;">
+                           <h4>{{movie.movieName}}</h4>
+                        </div>                    
+                        <a href={{movie.trailerUrl}} target="_blank"><img src={{movie.thumbnail}} alt="moive trailer image" /></a>
                         <h4>rate: {{movie.rate}}</h4>
-                        <img src="../../assets/images/movie-ticket.png" width="30px" height="30px" alt="golden ticket" />
+                        <img src="../../assets/images/movie-ticket.png" width="30px" height="30px" alt="golden ticket"/>
                      </div>
-                  </a>
                </div>
             </div>
          </div>

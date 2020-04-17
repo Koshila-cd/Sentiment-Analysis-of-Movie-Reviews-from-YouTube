@@ -4,7 +4,7 @@ import {SelectMovieComponent} from './select-movie/select-movie.component';
 
 
 const routes: Routes = [
-  { path: 'app-select-movie', component: SelectMovieComponent }
+  // { path: 'app-select-movie', component: SelectMovieComponent }
 ];
 
 @NgModule({
