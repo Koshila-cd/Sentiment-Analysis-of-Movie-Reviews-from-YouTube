@@ -4,5 +4,6 @@ export class Movie {
     trailerUrl: string;
     // lastCommentTime: Date;
     thumbnail: string;
-    rate: number;
+    rate: string;
+    ticket: string;
 }

@@ -20,7 +20,13 @@ export class MainPageComponent implements OnInit {
     this.service.findAll().subscribe(data => {
       this.movies = data;
       this.movies.forEach(dat =>{
-        console.log(dat.thumbnail)
+        let x = dat.rate.split("%")[0]
+        if ( x >= '60') {
+          dat.ticket = "../../assets/images/movie-ticket.png"
+        } 
+        else {
+          dat.ticket = "../../assets/images/ticket.png"
+        }
       })
     });
   }
