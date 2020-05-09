@@ -16,6 +16,7 @@ export class MainPageComponent implements OnInit {
   }
 
   ngOnInit() {
+    // data response from service
     this.service.findAll().subscribe(data => {
       this.movies = data;
       this.movies.forEach(dat =>{
