@@ -16,7 +16,6 @@ export class MainPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    // window.location.reload();
     this.service.findAll().subscribe(data => {
       this.movies = data;
       this.movies.forEach(dat =>{
